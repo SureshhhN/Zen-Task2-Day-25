@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <title>Post Office</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid header">
+        <div class="row">
+            <div class="col-12 logo">
+            <img class="pic" src="https://2.bp.blogspot.com/-3a7iMhpW5T8/Vg84-GHzZ4I/AAAAAAAAIU8/ZmLvzCQnwIw/s1600/India%2BPost%2BLOGO.jpg" alt="PostOffice Image" srcset="">
+        </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+    <div class="row">
+        <div class="col textbox">
+            <h5>Search by Postal PIN</h5> 
+        <form target="_self" onsubmit="event.preventDefault(); display('pin');">    
+        <div class="form-floating sm-3 ">
+            
+            <input type="number" class="form-control pin" id="pincode" placeholder="Enter Pin"  maxlength="6">
+            <label for="pincode">Enter Pincode</label>
+            <div class="d-grid gap-2">
+            <button  class="btn btn-primary btn-lg" type="submit">Search by Pin</button>
+            </div>
+        </form>
+        </div>
+        </div>
+        <div class="col textbox" >
+            <h5>Search by Branch Name</h5> 
+            <form target="_self" onsubmit="event.preventDefault(); display('name');"> 
+            <div class="form-floating sm-3 ">
+                <input type="text" class="form-control state" id="branch" placeholder="Enter Branch">
+                <label for="branch">Enter Branch</label>
+                <div class="d-grid gap-2">
+                <button class="btn btn-primary btn-lg" type="submit">Search by Branch</button>
+            </div>
+        </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container">
+        <div class="row details">
+          
+        </div>
+      </div>
+      
+      <script src="script.js"></script>
+</body>
+</html>
